@@ -2,8 +2,7 @@
 <p align="center">注意：下载使用的时候，不要把 img 文件夹上次到小程序内</p>
 <p align="center">此为开源版本，可以二次开发，不提供任何技术支持和安装咨询</p>
 <p align="center">
-<img src="https://img.shields.io/badge/yuran%20zixun-By%20二%20马%20食%20槽%20-gray.svg?colorA=655BE1&amp;colorB=4F44D6&amp;style=for-the-badge"> 
-<img src="https://img.shields.io/badge/>_搞机么'%20Blog-https://%20gaojima.com%20%E2%86%92-gray.svg?colorA=61c265&amp;colorB=4CAF50&amp;style=for-the-badge">
+<img src="https://img.shields.io/badge/yuran%20zixun-By%20二%20马%20食%20槽%20-gray.svg?colorA=655BE1&amp;colorB=4F44D6&amp;style=for-the-badge">
 </p>
 <h3>图片展示</h3>
 
@@ -24,29 +23,8 @@
 <h3>音乐播放器使用方法</h3>
 <p>需要在 audio 标签内增加：name="音频名字"，author="音频演唱者"，poster="音频封面"，src="音频封面"，controls="" 是否显示默认控件，默认为：false</p>
 
-<audio
-poster="https://smartapps.cn/upload/202205195376_797.jpg"
-name="十年"
-author="陈奕迅"
-src="https://smartapps.cn/upload/202205197695_982.mp3"
-controls=""
->
-</audio>
-
 <h3>视频播放器使用方法</h3>
-<video
-id="myVideo"
-title="{{ result.Title }}"
-src="https://smartapps.cn/upload/202205192039_827.mp4"
-width="480"
-height="280"
-enable-danmu=""
-danmu-btn=""
-controls=""
-poster="https://smartapps.cn/upload/202205196647_50.png"
-show-no-wifi-tip="{{true}}"
->
-</video>
+
 <p>需要在 video 增加 title="{{ result.Title }}"，src="视频地址"，poster="视频封面"，controls="" 是否显示默认控件，默认为：false</p>
 
 <p>enable-danmu="" 是否展示弹幕，只在初始化时有效，不能动态变更，默认为：false，danmu-btn="" 是否显示弹幕按钮，只在初始化时有效，不能动态变更，默认为：false</p>
