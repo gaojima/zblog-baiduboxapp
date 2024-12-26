@@ -1,0 +1,6 @@
+<swan-sitemap-list
+    list-data="{{listData}}"
+    current-page="{{currentPage}}"
+    total-page="{{totalPage}}"
+    path="/swan-sitemap/index">
+</swan-sitemap-list>

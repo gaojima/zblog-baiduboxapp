@@ -1,0 +1,46 @@
+/* 小程序背景色 */
+page {
+    background-color: #f7f9ff
+}
+
+button::after {
+    border: none;
+}
+
+/* 下拉加载 */
+.read-more {
+    text-align: center;
+    padding: 30rpx 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.cu-load {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cu-load::before {
+    font-family: "cuIcon";
+    display: inline-block;
+    margin-right: 6rpx;
+}
+
+.cu-load.loading::before {
+    animation: cuIcon-spin 2s infinite linear;
+}
+
+.cu-load.loading::after {
+    /*content: "正在为您加载中...";*/
+    content: url("./images/icon/loading.gif");
+}
+
+.cu-load.over::after {
+    content: "已为您加载完所有内容";
+}
+
+
+.cu-load.erro::after {
+    content: "对不起，数据加载失败";
+}

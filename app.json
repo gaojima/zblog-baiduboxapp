@@ -1,0 +1,78 @@
+{
+    "pages": [
+        "pages/home/index",
+        "pages/list/index",
+        "pages/article/index",
+        "pages/search/index",
+        "pages/about/index",
+        "pages/sorts/index",
+        "swan-sitemap/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#338ff0",
+        "navigationBarTextStyle": "white"
+    },
+    "dynamicLib": {
+        "myDynamicLib": {
+            "provider": "swan-interaction"
+        },
+        "swan-sitemap-lib": {
+            "provider": "swan-sitemap"
+        },
+        "swanGov": {
+            "provider": "swan-gov"
+        }
+    },
+    "tabBar": {
+        "color": "#80848f",
+        "selectedColor": "#338ff0",
+        "backgroundColor": "#f7f7fa",
+        "list": [
+            {
+                "pagePath": "pages/home/index",
+                "iconPath": "images/icon/Planet.png",
+                "selectedIconPath": "images/icon/Planet_fill.png",
+                "text": "Home"
+            },
+            {
+                "pagePath": "pages/sorts/index",
+                "iconPath": "images/icon/cate.png",
+                "selectedIconPath": "images/icon/cate_fill.png",
+                "text": "Cate"
+            },
+            {
+                "pagePath": "pages/search/index",
+                "iconPath": "images/icon/sou.png",
+                "selectedIconPath": "images/icon/sou-fill.png",
+                "text": "Search"
+            },
+            {
+                "pagePath": "pages/about/index",
+                "iconPath": "images/icon/about.png",
+                "selectedIconPath": "images/icon/about_fill.png",
+                "text": "About"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 3000,
+        "connectSocket": 1000,
+        "uploadFile": 1000,
+        "downloadFile": 1000
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "prefetch" : {
+        "enabled": true
+    },
+    "cookie": {
+        "enableStore": true
+    },
+    "useSwanNews": true,
+    "lazyCodeLoading": "requiredComponents",
+    "debug": true
+}

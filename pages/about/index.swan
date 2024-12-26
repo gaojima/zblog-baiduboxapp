@@ -1,0 +1,24 @@
+<view class="banner-header">
+    <view class="banner-item">
+        <view class="banner-media media-21x9">
+            <view class="banner-content" style="background-image: url('../../images/about.jpg')"></view>
+        </view>
+        <view class="banner-list">
+            <view class="banner-list-body">
+                <view class="banner-list-auto">
+                    <view class="banner-text-xl">
+                        关于我们 <button type="button" style='float:right' class='kefu' open-type="contact">客服</button>
+                    </view>
+                    <view class="banner-text-border">
+                        <view class="banner-text-sm">填写你自己的描述</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="post-center">
+    <view class="post-content">
+        <rich-text nodes="{{data.Content}}" image-menu-prevent="true"></rich-text>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "索引页",
+    "usingComponents": {
+        "swan-sitemap-list": "dynamicLib://swan-sitemap-lib/swan-sitemap-list"
+    }
+}

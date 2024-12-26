@@ -1,0 +1,39 @@
+<view class="post-center">
+    <view class="post-header">
+        <view class="mb-3" selectable='true'>
+            {{ result.Title }}
+        </view>
+    </view>
+    <view class="info">
+        <view class="content-desp">
+            <view class="author-detail">
+                <image class="author-avator" mode="widthFix" src="{{ result.AuthorAvatar }}"></image>
+                <view class="author-other">
+                    <view class="author-name">{{ result.AuthorName }}<view class="author-v"></view>
+                    </view>
+                    <view class="publish-date">阅读：{{ result.ViewNums }} 丨 发布：{{ result.PostTime }}</view>
+                </view>
+            </view>
+            <view class="follow-btn" s-for="item in followData">
+                <follow-swan size="default" type="{{ item.type }}" bindfavorstatuschange="statuschange" />
+            </view>
+        </view>
+    </view>
+    <view class="post-content" selectable="true">
+        <mp-html content="{{ result.Content }}" lazy-load="true"
+            container-style="white-space:pre-wrap;word-break:break-all" selectable="{{true}}" />
+    </view>
+</view>
+
+<view class="post-center" style="margin-top:12px;" s-if="{{ result.RelatedList.length > 0 }}">
+    <view class="mb-md-4">相关阅读</view>
+    <view class="post-li" s-for="item, index in result.RelatedList" s-key="{{ index }}" bindtap="detailsBtn" data-id='{{ item.id }}'>
+        <view class="post-hx">{{ item.title }}</view>
+    </view>
+</view>
+
+<view class="post-comment" style="margin-top:12px;" s-if="{{ comlist }}">
+    <view class="mb-md-4" style="padding:0.75rem;">吐槽列表</view>
+    <comment-list comment-param="{{ commentParam }}" detail-path="{{ detailPath }}" toolbar-config="{{ toolbarConfig }}" bindclickcomment="clickComment">
+    </comment-list>
+</view>
