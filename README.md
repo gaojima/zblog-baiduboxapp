@@ -2,7 +2,7 @@
 <p align="center">注意：下载使用的时候，不要把 img 文件夹上次到小程序内</p>
 <p align="center">此为开源版本，可以二次开发，不提供任何技术支持和安装咨询</p>
 <p align="center">⬇⬇⬇需要配合一下后台插件使用⬇⬇⬇</p>
-<p>https://github.com/gaojima/yuran_zixun</p>
+<p align="center">https://github.com/gaojima/yuran_zixun</p>
 <p align="center">
 <img src="https://img.shields.io/badge/yuran%20zixun-By%20二%20马%20食%20槽%20-gray.svg?colorA=655BE1&amp;colorB=4F44D6&amp;style=for-the-badge">
 </p>
